@@ -1,0 +1,39 @@
+/* police */
+@font-face
+{
+    font-family: 'Relaway';
+    src: url('police/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* styles principaux */
+#bloc_page
+{
+    font-family: 'Relaway' , serif;
+    width: 1440px;
+    margin: auto;
+}
+
+a
+{
+   text-decoration: none; 
+   color: black;
+}
+
+#inscrire
+{
+    font-weight: bold;
+    color:  #0065FC;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#filtres_bold
+{
+    font-weight: bold;
+}
+
