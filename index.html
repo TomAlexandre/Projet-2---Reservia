@@ -4,17 +4,19 @@
         <meta charset="utf-8" />
         <title>Reservia</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/30eabc943d.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div id="bloc_page">
+            <!-- en tête-->
             <header>
                 <div id="titre_principal">
                     <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-
+            <!-- liens de navigation -->
                 <nav>
                     <ul>
                         <li><a href="#hebergements_marseille">Hébergements</a></li>
@@ -25,51 +27,55 @@
             </header>
 
             <section id="search_zone">
-                <form method="POST" action="" id="recherche" >
-                    <input type="search" name="city" value="Marseille, France" />
-                    <input type="submit" value="rechercher" />
+                <!-- zone de recherche -->
+                <form method="POST" action="index.html" id="recherche" >
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" name="city" value="Marseille, France" id="search" />
+                    <input type="submit" value="Rechercher" id="submit" />
                 </form>
 
-                <aside id="filtres">
-                    <h2>Filtres</h2>
+                <!-- filtres pour la recherche -->
+                <aside>
                     <ul id="filtres_bold">
-                        <li><a href="#">Économique</a></li>
-                        <li><a href="#">Familial</a></li>
-                        <li><a href="#">Romantique</a></li>
-                        <li><a href="#">Animaux autorisés</a></li>
+                        <li id="filtres">Filtres</li>
+                        <li><a href="#" class="filtre"><i class="fas fa-money-bill-wave"></i><span class="nom_filtre">Économique</span></a></li>
+                        <li><a href="#" class="filtre"><i class="fas fa-child"></i><span class="nom_filtre">Familial</span></a></li>
+                        <li><a href="#" class="filtre"><i class="fas fa-heart"></i><span class="nom_filtre">Romantique</span></a></li>
+                        <li><a href="#" class="filtre"><i class="fas fa-dog"></i><span class="nom_filtre">Animaux autorisés</span></a></li>
                     </ul>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p id="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
                 </aside>
             </section>
-            
+
+            <!-- carte d'hébergement -->
             <section id="hebergements">
                 <h1 id="hebergements_marseille">Hébergements à Marseille</h1>
-                <div id="cannebiere">
+                <div class="annonce">
                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
                     <h2>Auberge la Cannebière</h2>
                     <p>Nuit à partir de 25€</p>
                 </div>
-                <div id="hotel_port">
+                <div class="annonce">
                     <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
                     <h2>Hôtel du port</h2>
                     <p>Nuit à partir de 52€</p>
                 </div>
-                <div id="les_mouettes">
+                <div class="annonce">
                     <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" />
                     <h2>Hôtel Les mouettes</h2>
                     <p>Nuit à partir de 76€</p>
                 </div>
-                <div id="hotel_mer">
+                <div class="annonce">
                     <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
                     <h2>Hôtel de la mer</h2>
                     <p>Nuit à partir de 46€</p>
                 </div>
-                <div id="panier">
+                <div class="annonce">
                     <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" />
                     <h2>Auberge Le Panier</h2>
                     <p>Nuit à partir de 23€</p>
                 </div>
-                <div id="amina">
+                <div class="annonce">
                     <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
                     <h2>Hôtel chez Amina</h2>
                     <p>Nuit à partir de 96€</p>
@@ -77,25 +83,27 @@
                 <h2>Afficher plus</h2>
             </section>
 
+            <!-- hébergements populaires -->
             <aside id="populaires">
                 <h1>Les plus populaires</h1>
-                <div id="soleil_matin">
+                <div class="pop">
                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" />
                     <h2>Hôtel Le soleil du matin</h2>
                     <p>Nuit à partir de 128€</p>
                 </div>
-                <div id="coeur_eau">
+                <div class="pop">
                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" />
                     <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                     <p>Nuit à partir de 71€</p>
                 </div>
-                <div id="bleu_blanc">
+                <div class="pop">
                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" />
                     <h2>Hôtel Tout bleu et Blanc</h2>
                     <p>Nuit à partir de 68€</p>
                 </div>
             </aside>
 
+            <!-- carte activites -->
             <section id="activites">
                 <h1 id="activites_marseille">Activités à Marseille</h1>
                 <div id="vieux_port">
@@ -124,19 +132,20 @@
                 </div>
             </section>
 
+            <!-- Pied de la page -->
             <footer>
-                <div id="a_propos">
+                <div class="pied">
                     <h2>A propos</h2>
                     <p>Fonctionnement du site</p>
                     <p>Conditions générales de vente</p>
                     <p>Données et confidentialité</p>
                 </div>
-                <div id="nos_hebergements">
+                <div class="pied">
                     <h2>Nos hébergements</h2>
                     <p>Charte qualité</p>
                     <p>Soumettre votre hôtel</p>
                 </div>
-                <div id="assistance">
+                <div class="pied">
                     <h2>Assistance</h2>
                     <p>Centre d'aide</p>
                     <p>Nous contacter</p>
