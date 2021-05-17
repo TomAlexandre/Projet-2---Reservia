@@ -411,3 +411,27 @@ nav a:hover
     border-radius: 10px 10px 0 0;
 }
 
+/* pied de page */
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.pied
+{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 180px 15px 60px;
+}
+
+.pied h2
+{
+    font-size: 1.2em;
+}
+
+.pied p
+{
+    margin-top: 0px
+}
+
