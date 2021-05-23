@@ -1,7 +1,7 @@
 /* police */
 @font-face
 {
-    font-family: 'Relaway';
+    font-family: 'Raleway';
     src: url('police/Raleway-Regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -10,15 +10,15 @@
 /* styles principaux */
 #bloc_page
 {
-    font-family: 'Relaway' , serif;
-    width: 1440px;
+    font-family: 'Raleway' , serif;
+    width: auto;
     margin: auto;
 }
 
 a
 {
    text-decoration: none; 
-   color: black;
+   color:#222;
 }
 
 #inscrire
@@ -47,30 +47,36 @@ header
 header h1
 {
     font-size: 1.3em;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     margin-top: 20px;
 }
 
 header p
 {
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 nav ul
 {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
 }
 
 nav li
 {
-    margin-right: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav a
+{
+    padding-top: 20px;
 }
 
 nav a:hover
 {
     color: #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 /* zone de recherche */
@@ -83,15 +89,15 @@ nav a:hover
 #recherche
 {
     display: flex;
-    height: 45px;
 }
 
 #recherche i
 {
     width: 50px;
-    font-size: 1.2em;
-    padding-top: 13px;
+    font-size: 1.3em;
+    padding-top: 10px;
     padding-left: 2px;
+    padding-bottom: 10px;
     background-color: #F2F2F2;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
@@ -99,24 +105,24 @@ nav a:hover
 
 #search
 {
-    font-family: 'Relaway';
+    font-family: 'Raleway';
     font-size: 1em;
     font-weight: bold;
-    padding-left: 12px;
+    padding-left: 10px;
     border: 1px solid #F2F2F2;
 }
 
 #submit
 {
-    font-family: 'Relaway';
+    font-family: 'Raleway';
     font-size: 1em;
     color: white;
     font-weight: bold;
     border-radius: 0px 10px 10px 0px;
     background-color: #0065FC;
     border-style: none;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* filtres */
@@ -126,7 +132,7 @@ nav a:hover
     padding-left: 10px;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #filtres_bold a:hover
@@ -140,19 +146,19 @@ nav a:hover
     display: flex;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
-    margin-left: 40px;
+    margin-left: 20px;
     padding: 0px 15px 0px 0px;
 }
 
 #filtres_bold i
 {
     background-color: #DEEBFF;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #0065FC;
     border-radius: 20px;
     width: 40px;
     height: 20px;
-    margin-right: 12px;
+    margin-right: 10px;
     padding: 10px 0px 10px 0px;
     text-align: center;
 }
@@ -160,6 +166,11 @@ nav a:hover
 .nom_filtre
 {
     padding-top: 10px;
+}
+
+#info
+{
+    display: flex;
 }
 
 #info i
@@ -170,6 +181,8 @@ nav a:hover
     width: 10px;
     height: 10px;
     margin-right: 15px;
+    margin-top: 13px;
+    margin-bottom: 32px;
     padding: 2px 2px 8px 8px;
 }
 
@@ -177,7 +190,6 @@ nav a:hover
 #hebergements
 {
     display: flex;
-    height: 670px;
 }
 
 #heberg
@@ -209,30 +221,30 @@ nav a:hover
 
 #hebergements_marseille
 {
-    margin-left: 23px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .annonce
 {
     display: flex;
     margin: auto;
+    margin-bottom: 15px;
     flex-direction: column;
     width: 30%;
-    height: 240px;
     background-color: white;
     border-radius: 20px;
 }
 
-#annonce1, #annonce2
+#annonces
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .photo_heb
 {
     display: flex;
-    height: 140px;
     border-radius: 20px 20px 0 0;
     margin: 5px 5px 0px 5px;
 }
@@ -244,43 +256,41 @@ nav a:hover
     margin-top: 20px;
 }
 
-#annonce2
-{
-    margin-top: 30px;
-}
-
 /* populaire */
 #populaires
 {
     display: flex;
     flex-direction: column;
     width: 35%;
-    flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-right: 20px;
 }
 
 #populaires h1
 {
-    margin-left: 30px;
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 20px;
     margin-bottom: 0px;
     font-size: 1.5em;
 }
 #populaires #arow
 {
-    padding-left: 190px;
+    padding-right: 20px;
 }
 
 .pop
 {
     display: flex;
-    margin: auto;
-    width: 90%;
-    height: 24%;
+    margin: 10px;
     background-color: white;
     border-radius: 20px;
+}
+
+.pop a
+{
+    display: flex;
 }
 
 .photo_pop
@@ -306,7 +316,7 @@ nav a:hover
     color: #0065FC;
 }
 
-#star1, #star2, #star3, #star4, #star5, #star6, #star7
+.empty_star
 {
     color: #DEEBFF
 }
@@ -315,15 +325,7 @@ nav a:hover
 {
     display: flex;
     padding-left: 15px;
-    padding-top: 70px;
-    color: #0065FC;
-}
-
-#stars_pop2
-{
-    display: flex;
-    padding-left: 15px;
-    padding-top: 50px;
+    padding-top: 10px;
     color: #0065FC;
 }
 
@@ -334,21 +336,20 @@ nav a:hover
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 600px;
 }
 
 #activites h2
 {
     font-size: 1em;
-    padding-top: 11px;
+    padding-top: 10px;
     padding-left: 15px;
     margin: 0px;
 }
 
 #activites_marseille
 {
-    margin-left: 35px;
-    margin-top: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 
@@ -358,10 +359,9 @@ nav a:hover
     margin: auto;
     flex-direction: column;
     width: 20%;
-    height: 400px;
     background-color: white;
     border-radius: 20px;
-    border: #F2F2F2 10px solid;
+    border: #F2F2F2 1px solid;
 }
 
 .acti2
@@ -371,10 +371,9 @@ nav a:hover
     margin: auto;
     flex-direction: column;
     width: 100%;
-    height: 180px;
     background-color: white;
     border-radius: 20px;
-    border: solid 10px #F2F2F2;
+    border: solid 1px #F2F2F2;
 }
 
 #spaceacti, #spaceacti2
@@ -385,8 +384,8 @@ nav a:hover
 #allacti
 {
     display: flex;
-    width: 98%;
-    margin: 15px 15px 15px 0px;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
 }
 
 .acticolumn
@@ -400,14 +399,12 @@ nav a:hover
 .acti_img
 {
     display: flex;
-    height: 90%;
     border-radius: 10px 10px 0 0;
 }
 
 .acti_img2
 {
     display: flex;
-    height: 77%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -422,12 +419,13 @@ footer
 {
     display: flex;
     flex-direction: column;
-    margin: 15px 180px 15px 60px;
+    margin: auto;
+    margin-top: 0px;
 }
 
 .pied h2
 {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .pied p
@@ -435,3 +433,263 @@ footer
     margin-top: 0px
 }
 
+@media screen and (max-width:800px)
+{
+    /*header*/
+    header
+    {
+        display: block;
+        justify-content: space-between;
+    }
+    
+    header h1
+    {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+    
+    header p
+    {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    nav ul
+    {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+    
+    nav li
+    {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    nav a
+    {
+        padding-top: 0px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: 0px;
+    }
+
+    #inscrire
+    {
+        border-bottom: 0px;
+    }
+
+    /*zone de recherche*/
+    #search_zone
+    {
+        flex-direction: column;
+    }
+    
+    #recherche
+    {
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    
+    #recherche i
+    {
+        width: auto;
+        font-size: 1em;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    #search
+    {
+        font-size: 1em;
+    }
+    
+    #submit
+    {
+        font-size: 0.9em;
+        border-radius: 0px 10px 10px 0px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    /*filtres*/
+    #filtres_bold
+    {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        align-items: flex-start;
+    }
+    
+    .filtre
+    {
+        margin-left: 0px;
+    }
+    
+    #filtres_bold i
+    {
+        font-size: 1.2em;
+    }
+
+    #filtres_bold li
+    {
+        padding: 5px 0px 5px 0px;
+    } 
+    
+    #info i
+    {
+        margin-right: 10px;
+        font-size: small;
+        padding: 3px 5px 8px 8px;
+    }
+
+    /*section hébergement*/
+    #hebergements
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #heberg
+    {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: none;
+    }
+    
+    #hebergements_marseille
+    {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 1.3em;
+    }
+    
+    #annonces
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .annonce
+    {
+        width: 100%;
+        border: 3px solid #F2F2F2;
+    }
+
+    .stars
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #plus
+    {
+        margin: auto;
+    }
+
+    /*populaires*/
+    #populaires
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    #populaires h1
+    {
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+
+    .pop
+    {
+        margin: 5px;
+    }
+
+    .stars_pop
+    {
+        display: flex;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #0065FC;
+    }
+
+    /*activités*/
+    #activites_marseille
+    {
+        font-size: 1.3em;
+        text-align: center;
+        margin: 20px auto 15px auto;
+    }
+
+    .acti
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .acti2
+    
+    {
+        width: 100%;
+    }
+    
+    #spaceacti, #spaceacti2
+    {
+        margin-bottom: 20px;
+    }
+    
+    #allacti
+    {
+        flex-direction: column;
+    }
+    
+    .acticolumn
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #activites h2
+    {
+        font-size: 1.1em;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        margin: 0px;
+    }
+
+    /*footer*/
+    footer
+    {
+        flex-direction: column;
+    }
+    
+    .pied
+    {
+        justify-content: flex-start;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .pied h2
+    {
+        font-size: 1.1em;
+    }
+}
