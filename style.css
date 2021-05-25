@@ -44,14 +44,14 @@ header
     justify-content: space-between;
 }
 
-header h1
+#search_zone h1
 {
     font-size: 1.3em;
     margin-bottom: 5px;
     margin-top: 20px;
 }
 
-header p
+#search_zone p
 {
     margin-top: 5px;
 }
@@ -181,8 +181,8 @@ nav a:hover
     width: 10px;
     height: 10px;
     margin-right: 15px;
-    margin-top: 13px;
-    margin-bottom: 32px;
+    margin-top: 2px;
+    margin-bottom: 30px;
     padding: 2px 2px 8px 8px;
 }
 
@@ -223,13 +223,14 @@ nav a:hover
 {
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .annonce
 {
     display: flex;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     flex-direction: column;
     width: 30%;
     background-color: white;
@@ -242,11 +243,40 @@ nav a:hover
     flex-wrap: wrap;
 }
 
-.photo_heb
+.annonce_img 
 {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 180px;
+    background-repeat: no-repeat;
     display: flex;
     border-radius: 20px 20px 0 0;
     margin: 5px 5px 0px 5px;
+}
+
+#heb_img1
+{
+    background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+}
+#heb_img2
+{
+    background-image: url('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+}
+#heb_img3
+{
+    background-image: url('images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+}
+#heb_img4
+{
+    background-image: url('images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+}
+#heb_img5
+{
+    background-image: url('images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+}
+#heb_img6
+{
+    background-image: url('images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
 }
 
 #plus
@@ -270,9 +300,8 @@ nav a:hover
 {
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin: 20px;
+    padding-left: 20px;
     font-size: 1.5em;
 }
 #populaires #arow
@@ -283,7 +312,9 @@ nav a:hover
 .pop
 {
     display: flex;
-    margin: 10px;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 20px;
     background-color: white;
     border-radius: 20px;
 }
@@ -293,12 +324,29 @@ nav a:hover
     display: flex;
 }
 
-.photo_pop
+.pop_img
 {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 200px;
+    background-repeat: no-repeat;
     display: flex;
     width: 40%;
     border-radius: 20px 0px 0px 20px;
     margin: 5px 0px 5px 5px;
+}
+
+#pop_img1
+{
+    background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+}
+#pop_img2
+{
+    background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+}
+#pop_img3
+{
+    background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
 .text_pop
@@ -312,7 +360,8 @@ nav a:hover
 {
     display: flex;
     padding-left: 15px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #0065FC;
 }
 
@@ -341,8 +390,9 @@ nav a:hover
 #activites h2
 {
     font-size: 1em;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 15px;
+    padding-bottom: 15px;
     margin: 0px;
 }
 
@@ -358,7 +408,7 @@ nav a:hover
     display: flex;
     margin: auto;
     flex-direction: column;
-    width: 20%;
+    width: 22%;
     background-color: white;
     border-radius: 20px;
     border: #F2F2F2 1px solid;
@@ -393,19 +443,52 @@ nav a:hover
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 20%;
+    width: 22%;
 }
 
 .acti_img
 {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 500px;
+    background-repeat: no-repeat;
     display: flex;
     border-radius: 10px 10px 0 0;
 }
 
 .acti_img2
 {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 214px;
+    background-repeat: no-repeat;
     display: flex;
     border-radius: 10px 10px 0 0;
+}
+
+#act_img1
+{
+    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+}
+#act_img2
+{
+    background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+}
+#act_img3
+{
+    background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+}
+#act_img4
+{
+    background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+#act_img5
+{
+    background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+}
+#act_img6
+{
+    background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
 }
 
 /* pied de page */
@@ -433,7 +516,8 @@ footer
     margin-top: 0px
 }
 
-@media screen and (max-width:800px)
+/* responsive mobile*/
+@media screen and (max-width:425px)
 {
     /*header*/
     header
@@ -442,17 +526,17 @@ footer
         justify-content: space-between;
     }
     
-    header h1
+    #search_zone h1
     {
         font-size: 1.3em;
         margin-bottom: 5px;
         margin-top: 20px;
     }
     
-    header p
+    #search_zone p
     {
-        margin-top: 15px;
-        margin-bottom: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     
     nav ul
@@ -545,6 +629,7 @@ footer
     #info i
     {
         margin-right: 10px;
+        margin-top: 2px;
         font-size: small;
         padding: 3px 5px 8px 8px;
     }
@@ -569,10 +654,10 @@ footer
     
     #hebergements_marseille
     {
-        text-align: center;
         width: 100%;
         margin: auto;
         margin-bottom: 15px;
+        margin-left: 10px;
         font-size: 1.3em;
     }
     
@@ -585,7 +670,12 @@ footer
     .annonce
     {
         width: 100%;
-        border: 3px solid #F2F2F2;
+        border: 1px solid #F2F2F2;
+    }
+
+    .annonce_img
+    {
+        height: 140px;
     }
 
     .stars
@@ -612,20 +702,34 @@ footer
     #populaires h1
     {
         margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
         font-size: 1.3em;
     }
 
     .pop
     {
-        margin: 5px;
+        margin: auto;
+        margin-bottom: 15px;
+        width: 90%;
+    }
+
+    .pop_img
+    {
+        width: 45%;
+        height: 140px;
+    }
+    #pop_img2
+    {
+        width: 65%;
     }
 
     .stars_pop
     {
         display: flex;
         padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 0px;
         color: #0065FC;
     }
 
@@ -633,8 +737,7 @@ footer
     #activites_marseille
     {
         font-size: 1.3em;
-        text-align: center;
-        margin: 20px auto 15px auto;
+        margin: 20px auto 15px 10px;
     }
 
     .acti
@@ -670,9 +773,20 @@ footer
         font-size: 1.1em;
         padding-top: 15px;
         padding-left: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         margin: 0px;
     }
+
+    .acti_img
+    {
+        height: 150px;
+    }
+
+    .acti_img2
+    {
+        height: 150px;
+    }
+
 
     /*footer*/
     footer
