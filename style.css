@@ -807,3 +807,103 @@ footer
         font-size: 1.1em;
     }
 }
+
+/* responsive tablette*/
+@media screen and (max-width:800px) and (min-width:426px)
+{
+    .annonce
+    {
+        width: 45%;
+    }
+
+    #plus
+    {
+        margin-bottom: 15px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .pied
+    {
+        font-size: 0.9em;
+    }
+
+    #hebergements
+    {
+        flex-direction: column-reverse;
+    }
+
+    #populaires
+    {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #heberg
+    {
+        width: 95%;
+        margin: auto;
+    }
+
+    #allacti
+    {
+        flex-wrap: wrap;
+    }
+
+    .acti
+    {
+        width: 45%;
+    }
+
+    .acticolumn
+    {
+        width: 45%;
+    }
+
+    .acti_img2
+    {
+        height: 165px;
+    }
+
+    .acti_img
+    {
+        height: 400px;
+    }
+
+    header
+    {
+        display: block;
+        justify-content: space-between;
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+
+    #filtres_bold
+    {
+        flex-wrap: wrap;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: 0px;
+    }
+
+    nav a
+    {
+        padding-top: 0px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #inscrire
+    {
+        border-bottom: 0px;
+    }
+}
