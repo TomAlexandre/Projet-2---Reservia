@@ -8,7 +8,12 @@
 }
 
 /* styles principaux */
-#bloc_page
+body
+{
+    margin: 0px;
+}
+
+body
 {
     font-family: 'Raleway' , serif;
     width: auto;
@@ -38,6 +43,12 @@ ul
 }
 
 /* header */
+#titre_principal
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 header
 {
     display: flex;
@@ -49,17 +60,20 @@ header
     font-size: 1.3em;
     margin-bottom: 5px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 #search_zone p
 {
     margin-top: 5px;
+    margin-left: 20px;
 }
 
 nav ul
 {
     display: flex;
     justify-content: flex-end;
+    margin-right: 15px;
 }
 
 nav li
@@ -70,13 +84,18 @@ nav li
 
 nav a
 {
-    padding-top: 20px;
+    padding-top: 13px;
 }
 
 nav a:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
+}
+
+#inscrire
+{
+    border-top: 0px;
 }
 
 /* zone de recherche */
@@ -89,6 +108,7 @@ nav a:hover
 #recherche
 {
     display: flex;
+    margin-left: 20px;
 }
 
 #recherche i
@@ -133,6 +153,21 @@ nav a:hover
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
+    margin-left: 0px;
+}
+
+aside h2
+{
+    font-size: 1.1em;
+    margin-left: 20px;
+    padding-left: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+#filtres
+{
+    display: flex;
 }
 
 #filtres_bold a:hover
@@ -171,6 +206,7 @@ nav a:hover
 #info
 {
     display: flex;
+    margin-left: 20px;
 }
 
 #info i
@@ -180,7 +216,7 @@ nav a:hover
     border-radius: 25px;
     width: 10px;
     height: 10px;
-    margin-right: 15px;
+    margin-right: 0px;
     margin-top: 2px;
     margin-bottom: 30px;
     padding: 2px 2px 8px 8px;
@@ -219,11 +255,12 @@ nav a:hover
     margin: 0px;
 }
 
-#hebergements_marseille
+#hebergements_titre
 {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .annonce
@@ -234,13 +271,15 @@ nav a:hover
     flex-direction: column;
     width: 30%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 0.5em #22222280;
 }
 
 #annonces
 {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 20px;
 }
 
 .annonce_img 
@@ -251,7 +290,7 @@ nav a:hover
     background-repeat: no-repeat;
     display: flex;
     border-radius: 20px 20px 0 0;
-    margin: 5px 5px 0px 5px;
+    margin: 8px 8px 0px 8px;
 }
 
 #heb_img1
@@ -282,7 +321,7 @@ nav a:hover
 #plus
 {
     display: flex;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 20px;
 }
 
@@ -316,7 +355,8 @@ nav a:hover
     width: 85%;
     margin-bottom: 20px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 0.5em #22222280;
 }
 
 .pop a
@@ -330,10 +370,10 @@ nav a:hover
     background-position: 50% 50%;
     height: 200px;
     background-repeat: no-repeat;
-    display: flex;
     width: 40%;
+    min-width: 40%;
     border-radius: 20px 0px 0px 20px;
-    margin: 5px 0px 5px 5px;
+    margin: 8px 0px 8px 8px;
 }
 
 #pop_img1
@@ -351,7 +391,6 @@ nav a:hover
 
 .text_pop
 {
-    display: flex;
     flex-direction: column;
     padding-top: 5px;
 }
@@ -396,7 +435,7 @@ nav a:hover
     margin: 0px;
 }
 
-#activites_marseille
+#activites_titre
 {
     margin-left: 20px;
     margin-top: 20px;
@@ -411,7 +450,7 @@ nav a:hover
     width: 22%;
     background-color: white;
     border-radius: 20px;
-    border: #F2F2F2 1px solid;
+    border: #eee 1px solid;
 }
 
 .acti2
@@ -423,7 +462,7 @@ nav a:hover
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    border: solid 1px #F2F2F2;
+    border: solid 1px #eee;
 }
 
 #spaceacti, #spaceacti2
@@ -435,7 +474,7 @@ nav a:hover
 {
     display: flex;
     width: 100%;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 20px 0px;
 }
 
 .acticolumn
@@ -453,7 +492,7 @@ nav a:hover
     height: 500px;
     background-repeat: no-repeat;
     display: flex;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .acti_img2
@@ -463,7 +502,7 @@ nav a:hover
     height: 214px;
     background-repeat: no-repeat;
     display: flex;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 #act_img1
@@ -473,10 +512,12 @@ nav a:hover
 #act_img2
 {
     background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    height: 263px;
 }
 #act_img3
 {
     background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    height: 166px;
 }
 #act_img4
 {
@@ -496,6 +537,8 @@ footer
 {
     display: flex;
     background-color: #F2F2F2;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .pied
@@ -504,6 +547,7 @@ footer
     flex-direction: column;
     margin: auto;
     margin-top: 0px;
+    width: 100%;
 }
 
 .pied h2
@@ -525,18 +569,25 @@ footer
         display: block;
         justify-content: space-between;
     }
+
+    #titre_principal
+    {
+        margin-left: 20px;
+    }
     
     #search_zone h1
     {
         font-size: 1.3em;
         margin-bottom: 5px;
         margin-top: 20px;
+        margin-left: 20px;
     }
     
     #search_zone p
     {
         margin-top: 5px;
         margin-bottom: 5px;
+        margin-left: 20px;
     }
     
     nav ul
@@ -580,6 +631,12 @@ footer
     {
         justify-content: flex-start;
         padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    #info
+    {
+        margin-left: 15px;
     }
     
     #recherche i
@@ -606,16 +663,28 @@ footer
     #filtres_bold
     {
         display: flex;
-        flex-direction: column;
-        padding-left: 10px;
+        flex-wrap: wrap;
+        padding-left: 0px;
         align-items: flex-start;
+        margin-left: 0px;
+        margin-top: 5px;
     }
-    
+
     .filtre
     {
-        margin-left: 0px;
+        margin-left: 15px;
     }
     
+    #filtres
+    {
+        flex-direction: column;
+    }
+    aside h2
+    {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
     #filtres_bold i
     {
         font-size: 1.2em;
@@ -628,7 +697,7 @@ footer
     
     #info i
     {
-        margin-right: 10px;
+        margin-right: 0px;
         margin-top: 2px;
         font-size: small;
         padding: 3px 5px 8px 8px;
@@ -652,25 +721,28 @@ footer
         background: none;
     }
     
-    #hebergements_marseille
+    #hebergements_titre
     {
         width: 100%;
         margin: auto;
         margin-bottom: 15px;
-        margin-left: 10px;
+        margin-left: 15px;
         font-size: 1.3em;
+        padding-left: 0px;
     }
     
     #annonces
     {
         flex-direction: column;
         width: 100%;
+        margin-left: 0px;
     }
 
     .annonce
     {
-        width: 100%;
+        width: 95%;
         border: 1px solid #F2F2F2;
+        box-shadow: none;
     }
 
     .annonce_img
@@ -701,10 +773,16 @@ footer
 
     #populaires h1
     {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         margin-left: 5px;
         margin-right: 5px;
         font-size: 1.3em;
+        padding-left: 10px;
+    }
+
+    #populaires #arow
+    {
+        padding-right: 10px;
     }
 
     .pop
@@ -712,16 +790,15 @@ footer
         margin: auto;
         margin-bottom: 15px;
         width: 90%;
+        border-radius: 25px;
     }
 
     .pop_img
     {
         width: 45%;
+        min-width: 45%;
         height: 140px;
-    }
-    #pop_img2
-    {
-        width: 65%;
+        margin: 5px 0px 5px 5px;
     }
 
     .stars_pop
@@ -734,22 +811,22 @@ footer
     }
 
     /*activités*/
-    #activites_marseille
+    #activites_titre
     {
         font-size: 1.3em;
-        margin: 20px auto 15px 10px;
+        margin: 20px auto 15px 15px;
     }
 
     .acti
     {
-        width: 100%;
+        width: 90%;
         margin-bottom: 20px;
     }
     
     .acti2
     
     {
-        width: 100%;
+        width: 90%;
     }
     
     #spaceacti, #spaceacti2
@@ -792,19 +869,24 @@ footer
     footer
     {
         flex-direction: column;
+        margin-top: 0px;
     }
     
     .pied
     {
         justify-content: flex-start;
-        margin-left: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .pied h2
     {
         font-size: 1.1em;
+    }
+
+    .pied p
+    {
+        margin-bottom: 10px;
     }
 }
 
@@ -887,6 +969,18 @@ footer
     #filtres_bold
     {
         flex-wrap: wrap;
+        margin-top: 5px;
+        padding-left: 0px;
+    }
+
+    #filtres
+    {
+        flex-direction: column;
+    }
+    
+    aside h2
+    {
+        margin-bottom: 0px;
     }
 
     nav a:hover
