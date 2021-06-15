@@ -18,8 +18,8 @@
         <!-- liens de navigation -->
         <nav>
             <ul>
-                <li><a href="#hebergements_marseille">Hébergements</a></li>
-                <li><a href="#activites_marseille">Activités</a></li>
+                <li><a href="#hebergements_titre">Hébergements</a></li>
+                <li><a href="#activites_titre">Activités</a></li>
                 <li><a href="#" id="inscrire">S'inscrire</a></li>
             </ul>
         </nav>
@@ -32,7 +32,10 @@
         <form method="POST" action="index.html" id="recherche">
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" name="city" value="Marseille, France" id="search" />
-            <input type="submit" value="Rechercher" id="submit" />
+            <div id="submit">
+                <span>Rechercher</span>
+                <i class="fas fa-search"></i>
+            </div>  
         </form>
 
         <!-- filtres pour la recherche -->
