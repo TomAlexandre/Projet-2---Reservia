@@ -15,6 +15,11 @@ body
     margin: 0px;
 }
 
+*
+{
+    box-sizing: border-box;
+}
+
 a
 {
    text-decoration: none; 
@@ -193,7 +198,6 @@ aside h2
     color: #0065FC;
     border-radius: 20px;
     width: 40px;
-    height: 20px;
     margin-right: 10px;
     padding: 10px 0px 10px 0px;
     text-align: center;
@@ -215,12 +219,10 @@ aside h2
     color: #0065FC;
     border: 2px solid gainsboro;
     border-radius: 25px;
-    width: 10px;
-    height: 10px;
     margin-right: 0px;
     margin-top: 2px;
     margin-bottom: 30px;
-    padding: 2px 2px 8px 8px;
+    padding: 0 5px 0 5px;
 }
 
 /* section hébergement */
@@ -295,31 +297,6 @@ aside h2
     margin: 8px 8px 0px 8px;
 }
 
-#heb_img1
-{
-    background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-}
-#heb_img2
-{
-    background-image: url('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-}
-#heb_img3
-{
-    background-image: url('images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-}
-#heb_img4
-{
-    background-image: url('images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-}
-#heb_img5
-{
-    background-image: url('images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-}
-#heb_img6
-{
-    background-image: url('images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-}
-
 #plus
 {
     display: flex;
@@ -377,19 +354,6 @@ aside h2
     min-width: 40%;
     border-radius: 20px 0px 0px 20px;
     margin: 8px 0px 8px 8px;
-}
-
-#pop_img1
-{
-    background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-}
-#pop_img2
-{
-    background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
-}
-#pop_img3
-{
-    background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
 .text_pop
@@ -567,12 +531,6 @@ footer
 @media screen and (max-width:425px)
 {
     /*header*/
-    header
-    {
-        display: block;
-        justify-content: space-between;
-    }
-
     #titre_principal
     {
         padding: 20px 20px 0 20px;
@@ -593,15 +551,15 @@ footer
     nav ul
     {
         display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
+        flex-wrap: wrap;
         padding-left: 0px;
         margin-right: 0px;
+        margin-top: 20px;
     }
     
     nav li
     {
-        padding: 20px;
+        padding: 20px 10px 20px 20px;
     }
     
     nav a
@@ -618,6 +576,19 @@ footer
     #inscrire
     {
         border-bottom: 0px;
+    }
+
+    #ins_nav
+    {
+        order: 1;
+    }
+    #heb_nav
+    {
+        order: 2;
+    }
+    #act_nav
+    {
+        order: 3;
     }
 
     /*zone de recherche*/
@@ -709,8 +680,9 @@ footer
     {
         margin-right: 0px;
         margin-top: 2px;
-        font-size: small;
-        padding: 3px 5px 8px 8px;
+        font-size: 0.9em;
+        padding: 4px 8px 0px 8px;
+        border-radius: 35px;
     }
 
     /*section hébergement*/
@@ -747,8 +719,6 @@ footer
     .annonce
     {
         width: 90%;
-        border: 1px solid gainsboro;
-        box-shadow: none;
     }
 
     .annonce_img
