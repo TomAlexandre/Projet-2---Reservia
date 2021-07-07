@@ -531,6 +531,11 @@ footer
 @media screen and (max-width:425px)
 {
     /*header*/
+    header
+    {
+        display: block;
+    }
+
     #titre_principal
     {
         padding: 20px 12px 0 20px;
@@ -553,7 +558,7 @@ footer
     nav ul
     {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
         padding-left: 0px;
         margin-right: 0px;
         margin-top: 20px;
@@ -577,20 +582,10 @@ footer
 
     #inscrire
     {
+        position: absolute;
+        top: 6%;
+        left: 70%;
         border-bottom: 0px;
-    }
-
-    #ins_nav
-    {
-        order: 1;
-    }
-    #heb_nav
-    {
-        order: 2;
-    }
-    #act_nav
-    {
-        order: 3;
     }
 
     /*zone de recherche*/
